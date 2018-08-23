@@ -154,7 +154,6 @@
 		// ## - 4.1 - Load Stylesheets
 		wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
 		wp_enqueue_style( 'styles', get_stylesheet_uri() );
-		wp_enqueue_style( 'styles-mel', get_template_directory_uri() . '/assets/css/styles-mel.css' );
 		wp_enqueue_style( 'styles-min', get_template_directory_uri() . '/assets/css/styles-min.css' );
 
 		// ## - 4.2 - Load Modernizr
