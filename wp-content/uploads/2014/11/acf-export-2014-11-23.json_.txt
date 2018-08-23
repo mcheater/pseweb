@@ -1,0 +1,1658 @@
+[
+    {
+        "key": "group_54568e7809958",
+        "title": "Global Options",
+        "fields": [
+            {
+                "key": "field_546567c74ff09",
+                "label": "General",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_546bebe53e830",
+                "label": "Homepage Identification",
+                "name": "homepage_identification",
+                "prefix": "",
+                "type": "post_object",
+                "instructions": "Select the post you wish to use for the homepage. This is important, as all the configuration options for the homepage will be pulled directly from this post.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "pse-homepage"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "id",
+                "ui": 1
+            },
+            {
+                "key": "field_546567dd4ff0a",
+                "label": "Sponsor Highlight",
+                "name": "sponsor_highlight",
+                "prefix": "",
+                "type": "radio",
+                "instructions": "Do you want to display a sponsor in the mobile off-canvas navigation?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Yes": "Yes",
+                    "No": "No"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal"
+            },
+            {
+                "key": "field_546569084fad0",
+                "label": "Sponsor Highlighted",
+                "name": "sponsor_highlighted",
+                "prefix": "",
+                "type": "radio",
+                "instructions": "Do you want to display the platinum sponsor, or any random sponsor?",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_546567dd4ff0a",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Platinum": "Platinum",
+                    "Random": "Random"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal"
+            },
+            {
+                "key": "field_54656b8c5dc33",
+                "label": "Random Sponsor Title",
+                "name": "random_sponsor_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Customize the title for the random sponsor. If no title is set, \"Proud Sponsor\" will be displayed by default.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_546567dd4ff0a",
+                            "operator": "==",
+                            "value": "Yes"
+                        },
+                        {
+                            "field": "field_546569084fad0",
+                            "operator": "==",
+                            "value": "Random"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_54568e7d1ce8a",
+                "label": "Social",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_5456994a84469",
+                "label": "Twitter",
+                "name": "twitter",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add you Twitter username. Use only the username, do not include the @ symbol.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456996d60cc5",
+                "label": "Facebook",
+                "name": "facebook",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add the URL to your Facebook page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456997660cc6",
+                "label": "Google Plus",
+                "name": "google_plus",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add the URL to your Google Plus page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_545699847d533",
+                "label": "Instagram",
+                "name": "instagram",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add the URL to your Instagram page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456ab50cdbe9",
+                "label": "Footer",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_5456ae49b0d1c",
+                "label": "Left Button Text",
+                "name": "left_button_text",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add some text for the left button",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456ae71b0d1d",
+                "label": "Left Button Link",
+                "name": "left_button_link",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add a URL for the left button",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456aed6daa16",
+                "label": "Middle Button Text",
+                "name": "middle_button_text",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add some text for the middle button",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456aee6daa17",
+                "label": "Middle Button Link",
+                "name": "middle_button_link",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add a URL for the middle button",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456af0b93c1b",
+                "label": "Right Button Text",
+                "name": "right_button_text",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add some text for the right button",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456aefd93c1a",
+                "label": "Right Button Link",
+                "name": "right_button_link",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add a URL for the right button",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5456d2c1bad73",
+        "title": "Section Titles",
+        "fields": [
+            {
+                "key": "field_5458bcd189de0",
+                "label": "Speakers Title",
+                "name": "speakers_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Customize the title for the speakers pages. If no title is specified, \"Our Speakers\" will be used by default.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5458bcf8b3155",
+                "label": "Sessions Title",
+                "name": "sessions_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Customize the title for the sessions pages. If no title is specified, \"Our Presentations\" will be used by default.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5456d30625700",
+                "label": "Blog Title",
+                "name": "blog_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Customize the title for the blog pages. If no title is specified, \"From the Blog\" will be used by default.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5458bc6eb0f7b",
+                "label": "Sponsors Title",
+                "name": "sponsors_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Customize the title for the sponsor pages. If no title is specified, \"Our Sponsors\" will be used by default.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-section-titles"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5456d03d68210",
+        "title": "Yearly Options",
+        "fields": [
+            {
+                "key": "field_5456d045eafa5",
+                "label": "Title Year",
+                "name": "title_year",
+                "prefix": "",
+                "type": "number",
+                "instructions": "What year would you like to display in the various site titles? This is not required and can be left blank to allow for titles to display as #PSEWEB at any point during the year.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468d4b9a6fe8",
+                "label": "Speaker Year",
+                "name": "speaker_year",
+                "prefix": "",
+                "type": "taxonomy",
+                "instructions": "Select the speaker year you would like to actively display across the site",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "speaker-year",
+                "field_type": "select",
+                "allow_null": 0,
+                "load_save_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            },
+            {
+                "key": "field_546c836e02d97",
+                "label": "Session Year",
+                "name": "session_year",
+                "prefix": "",
+                "type": "taxonomy",
+                "instructions": "Select the session year you would like to actively display across the site",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "session-year",
+                "field_type": "select",
+                "allow_null": 0,
+                "load_save_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            },
+            {
+                "key": "field_545b80cdffe6b",
+                "label": "Sponsor Year",
+                "name": "sponsor_year",
+                "prefix": "",
+                "type": "taxonomy",
+                "instructions": "Select the sponsor year you would like to actively display across the site",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "sponsor-year",
+                "field_type": "select",
+                "allow_null": 0,
+                "load_save_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-year-options"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_547172bd7e897",
+        "title": "Sidebar Options",
+        "fields": [
+            {
+                "key": "field_5471799ec574a",
+                "label": "Global",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_547172c2b9b1e",
+                "label": "Global Sidebar",
+                "name": "global_sidebar",
+                "prefix": "",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Add Item",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "547172c9d07d8",
+                        "name": "content_block",
+                        "label": "Content Block",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "key": "field_547177323e396",
+                                "label": "Content Title",
+                                "name": "content_title",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "Add a title for the text block",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_547177493e397",
+                                "label": "Content Text",
+                                "name": "content_text",
+                                "prefix": "",
+                                "type": "textarea",
+                                "instructions": "Add some content for the text block",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": "wpautop",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5471775c3e398",
+                                "label": "Content Link",
+                                "name": "content_link",
+                                "prefix": "",
+                                "type": "url",
+                                "instructions": "Optional link for the content block",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "54717316b9b21",
+                        "name": "button",
+                        "label": "Button",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "key": "field_547177c6f6cff",
+                                "label": "Button Text",
+                                "name": "button_text",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "Add some text for the button",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_547177def6d00",
+                                "label": "Button Link",
+                                "name": "button_link",
+                                "prefix": "",
+                                "type": "url",
+                                "instructions": "Add a link for the button",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_547177f8f6d01",
+                                "label": "Button Colour",
+                                "name": "button_colour",
+                                "prefix": "",
+                                "type": "radio",
+                                "instructions": "Pick a static colour for the button",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "blue": "Blue",
+                                    "orange": "Orange",
+                                    "yellow": "Yellow",
+                                    "green": "Green"
+                                },
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "null",
+                                "layout": "horizontal"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "547176be2e70b",
+                        "name": "speakers",
+                        "label": "Speakers",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "key": "field_547178672abdc",
+                                "label": "Speakers Title",
+                                "name": "speakers_title",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "Add a title for the speakers block",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5471787c2abdd",
+                                "label": "Speakers Shown",
+                                "name": "speakers_shown",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "How many speakers to show? Maximum of 4. Results will be shown randomly.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": 1,
+                                "max": 4,
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "547176d22e70c",
+                        "name": "sessions",
+                        "label": "Sessions",
+                        "display": "row",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "547176df2e70d",
+                        "name": "sponsors",
+                        "label": "Sponsors",
+                        "display": "row",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "547176f52e70e",
+                        "name": "blog_posts",
+                        "label": "Blog Posts",
+                        "display": "row",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "547177042e710",
+                        "name": "categories",
+                        "label": "Categories",
+                        "display": "row",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "547177032e70f",
+                        "name": "tags",
+                        "label": "Tags",
+                        "display": "row",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-sidebar-options"
+                }
+            ]
+        ],
+        "menu_order": 3,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_546936b983c79",
+        "title": "Footer Options",
+        "fields": [
+            {
+                "key": "field_54693aa036724",
+                "label": "Speakers",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_546a9b7062a6b",
+                "label": "Speaker Items Displayed",
+                "name": "speaker_items_displayed",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": 5,
+                "layout": "table",
+                "button_label": "Add Item",
+                "sub_fields": [
+                    {
+                        "key": "field_546a9b9762a6c",
+                        "label": "Show Item",
+                        "name": "show_item",
+                        "prefix": "",
+                        "type": "radio",
+                        "instructions": "Add and select items to display at the bottom of the main content area. Items can be dragged and dropped into the desired position at any time.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Speakers": "Speakers",
+                            "Sessions": "Sessions",
+                            "Blog Posts": "Blog Posts",
+                            "Sponsors": "Sponsors",
+                            "Tweets": "Tweets"
+                        },
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal"
+                    }
+                ]
+            },
+            {
+                "key": "field_546a9ee81bda6",
+                "label": "Presentations",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_546a9ef21bda7",
+                "label": "Presenation Items Displayed",
+                "name": "presenation_items_displayed",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": 5,
+                "layout": "table",
+                "button_label": "Add Item",
+                "sub_fields": [
+                    {
+                        "key": "field_546a9ef21bda8",
+                        "label": "Show Item",
+                        "name": "show_item",
+                        "prefix": "",
+                        "type": "radio",
+                        "instructions": "Add and select items to display at the bottom of the main content area. Items can be dragged and dropped into the desired position at any time.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Speakers": "Speakers",
+                            "Sessions": "Sessions",
+                            "Blog Posts": "Blog Posts",
+                            "Sponsors": "Sponsors",
+                            "Tweets": "Tweets"
+                        },
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal"
+                    }
+                ]
+            },
+            {
+                "key": "field_546a9d345e95b",
+                "label": "Blog",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_546a9d425e95c",
+                "label": "Blog Items Displayed",
+                "name": "blog_items_displayed",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": 5,
+                "layout": "table",
+                "button_label": "Add Item",
+                "sub_fields": [
+                    {
+                        "key": "field_546a9d425e95d",
+                        "label": "Show Item",
+                        "name": "show_item",
+                        "prefix": "",
+                        "type": "radio",
+                        "instructions": "Add and select items to display at the bottom of the main content area. Items can be dragged and dropped into the desired position at any time.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Speakers": "Speakers",
+                            "Sessions": "Sessions",
+                            "Blog Posts": "Blog Posts",
+                            "Sponsors": "Sponsors",
+                            "Tweets": "Tweets"
+                        },
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal"
+                    }
+                ]
+            },
+            {
+                "key": "field_546a9bb46e7c7",
+                "label": "Sponsors",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_546a9bbe6e7c8",
+                "label": "Sponsor Items Displayed",
+                "name": "sponsor_items_displayed",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": 5,
+                "layout": "table",
+                "button_label": "Add Item",
+                "sub_fields": [
+                    {
+                        "key": "field_546a9bbe6e7c9",
+                        "label": "Show Item",
+                        "name": "show_item",
+                        "prefix": "",
+                        "type": "radio",
+                        "instructions": "Add and select items to display at the bottom of the main content area. Items can be dragged and dropped into the desired position at any time.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Speakers": "Speakers",
+                            "Sessions": "Sessions",
+                            "Blog Posts": "Blog Posts",
+                            "Sponsors": "Sponsors",
+                            "Tweets": "Tweets"
+                        },
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-footer-options"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_545b6d9c8aa16",
+        "title": "Sponsors",
+        "fields": [
+            {
+                "key": "field_545b6da2d2cfa",
+                "label": "Sponsor Link",
+                "name": "sponsor_link",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add a URL for the sponsor",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_545b6dc8d2cfb",
+                "label": "Sponsor Logo",
+                "name": "sponsor_logo",
+                "prefix": "",
+                "type": "image",
+                "instructions": "Add an image for the sponsor. It is recommended that the image be a PNG with a transparent background. To ensure high quality logos, ptimal size is 600px wide, but site will scale image to site the given space for each level of sponsorship.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "thumbnail",
+                "library": "all"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "pse-sponsors"
+                }
+            ]
+        ],
+        "menu_order": 5,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_546bed53803e2",
+        "title": "Homepage Options",
+        "fields": [
+            {
+                "key": "field_546bed63e3b25",
+                "label": "Banner",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_546bed86a50d7",
+                "label": "Banner Text",
+                "name": "banner_text",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add some text for the banner. For responsive purposes, the banner text is limited to a maximum of 120 characters.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 120,
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "pse-homepage"
+                }
+            ]
+        ],
+        "menu_order": 6,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_546a96c51e152",
+        "title": "Page Options",
+        "fields": [
+            {
+                "key": "field_546a96ca1f9bd",
+                "label": "Footer Options",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_546a96ea1f9be",
+                "label": "Items Displayed",
+                "name": "items_displayed",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": 5,
+                "layout": "table",
+                "button_label": "Add Item",
+                "sub_fields": [
+                    {
+                        "key": "field_546a97101f9bf",
+                        "label": "Show Item",
+                        "name": "show_item",
+                        "prefix": "",
+                        "type": "radio",
+                        "instructions": "Add and select items to display at the bottom of the main content area. Items can be dragged and dropped into the desired position at any time.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Speakers": "Speakers",
+                            "Sessions": "Sessions",
+                            "Blog Posts": "Blog Posts",
+                            "Sponsors": "Sponsors",
+                            "Tweets": "Tweets"
+                        },
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 7,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5468cdd47b2c8",
+        "title": "Speaker Details",
+        "fields": [
+            {
+                "key": "field_5468cf4966f9d",
+                "label": "General Info",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_5468cde156db7",
+                "label": "First Name",
+                "name": "first_name",
+                "prefix": "",
+                "type": "text",
+                "instructions": "What is the speakers first name?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468ce1abc360",
+                "label": "Last Name",
+                "name": "last_name",
+                "prefix": "",
+                "type": "text",
+                "instructions": "What is the speakers last name?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468ce69859fd",
+                "label": "Job Title",
+                "name": "job_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "What is the speakers job title?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468ce8a859fe",
+                "label": "Organization",
+                "name": "organization",
+                "prefix": "",
+                "type": "text",
+                "instructions": "What organization does the speaker work for?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468ceac11f35",
+                "label": "Profile Photo",
+                "name": "profile_photo",
+                "prefix": "",
+                "type": "image",
+                "instructions": "Add a profile photo for the speaker. Size should be no smaller than 350 x 350",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "thumbnail",
+                "library": "all"
+            },
+            {
+                "key": "field_5468cef411f36",
+                "label": "Twitter Username",
+                "name": "twitter_username",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add the speakers Twitter username. Use only the username, do not include the @ symbol.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468cf22211e9",
+                "label": "LinkedIn Profile",
+                "name": "linkedin_profile",
+                "prefix": "",
+                "type": "text",
+                "instructions": "Add a URL to the speakers public LinkedIn profile",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468cf5a66f9e",
+                "label": "PSEWEB Info",
+                "name": "",
+                "prefix": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_5468cf8f63907",
+                "label": "Planning Team Title",
+                "name": "planning_team_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "What is the speakers planning team title?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468cfa163908",
+                "label": "Board Member Title",
+                "name": "board_member_title",
+                "prefix": "",
+                "type": "text",
+                "instructions": "What is the speakers board member title",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5468cfba63909",
+                "label": "Five Year Member",
+                "name": "five_year_member",
+                "prefix": "",
+                "type": "radio",
+                "instructions": "Is this speaker a 5 year PSEWEB member?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Yes": "Yes",
+                    "No": "No"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "No",
+                "layout": "horizontal"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "pse-speakers"
+                }
+            ]
+        ],
+        "menu_order": 8,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    }
+]
